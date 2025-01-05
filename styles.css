@@ -1,0 +1,257 @@
+/* CSS Resets courtesy of https://www.joshwcomeau.com/css/custom-css-reset/ */
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+
+body {
+    background-color: var(--green-100);
+    font-family: 'merriweatherregular', sans-serif;
+    width: 100%;
+}
+
+
+::backdrop {
+    background-color: rgba(86, 86, 187, 0.85);
+    /* opacity: 0.75; */
+}
+
+.new_book {
+    display: flex;
+    height: 72px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,0.20);
+    box-shadow: 0 5px 5px 0px rgba(0,0,0,0.25) ;
+}
+
+:root {
+    --primary-color: #3498db; /* Light blue */
+    --secondary-color: #2ecc71; /* Green */
+    --text-color: #333; /* Dark gray */
+    --background-color: #f4f4f4; /* Light gray */
+    --red-100: #fee2e2; /*Light red*/
+    --green-100: #dcfce7; /* Light green */
+    --blackish-blue: #4d5b99;
+  }
+
+
+.main_page {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-rows: 200px 200px;
+  grid-auto-rows: 200px;
+  gap: 20px;
+  padding: 20px;
+  width: 90%;
+}
+
+.my-card {
+  border: 4px solid blue;
+  padding: 12px;
+  background-color: white;
+  border-radius: 8px;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  box-shadow: 0 5px 5px 0px rgba(0,0,0,0.20);
+  /* position: relative; */
+  
+}
+
+#new-book-button {
+    width: 120px;
+    height: 36px;
+    color: blue;
+    background-color: white;
+    outline: 0;
+    border: 1px solid blue;
+    font-weight: bold;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.delete-button, .read-button{
+  border: 1px solid blue;
+  outline: 0;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  /* width: 72px; */
+  height: 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.read-delete {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 16px; */
+  padding: 12px;
+  gap: 12px;
+  /* font-family: sans-serif; */
+  /* position: fixed;
+  top: 0; */
+}
+
+.delete-button:hover, .read-button:hover {
+  background-color: darkblue;
+  /* filter: brightness(0.8); */
+}
+
+
+#new-book-button:hover {
+  border-color: darkblue;
+  color: darkblue;
+}
+
+dialog {
+  border: 0;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* text-align: center; */
+
+  /* Centering styles */
+  position: fixed; /* Ensures it's positioned relative to the viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  min-width: 450px;
+}
+
+
+.dialog-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 14px;
+}
+
+form>h3 {
+  margin-bottom: 16px;
+}
+
+form input {
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+
+.book_title_section, .book_author_section, .book_pages_section, .read_yet_section {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-auto-rows: 100%;
+  
+}
+
+select {
+  height: 30px;
+  border-radius: 6px;
+}
+
+
+
+.dialog-buttons button {
+  color: black;
+  background-color: white;
+  outline: 0;
+  border: 2px solid black;
+  height: 36px;
+  border-radius: 18px;
+  width: 125px;
+  cursor: pointer;
+}
+
+.dialog-buttons button:hover {
+  color: white;
+  background-color: black;
+}
+
+.header_section {
+  height: 100px;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.20);
+  font-size: 64px;
+  background-color: white;
+  color: blue;
+  /* font-family: 'hawthorne_vintageregular', sans-serif; */
+}
+
+svg {
+  height: 72%;
+  width: auto;
+  fill: blue;
+  padding-left: 16px;
+  padding-right: 16px;
+
+}

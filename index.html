@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet2.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main_page">
+        <div class="header_section"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>book-open-blank-variant-outline</title><path d="M12 21.5C10.65 20.65 8.2 20 6.5 20C4.85 20 3.15 20.3 1.75 21.05C1.65 21.1 1.6 21.1 1.5 21.1C1.25 21.1 1 20.85 1 20.6V6C1.6 5.55 2.25 5.25 3 5C4.11 4.65 5.33 4.5 6.5 4.5C8.45 4.5 10.55 4.9 12 6C13.45 4.9 15.55 4.5 17.5 4.5C18.67 4.5 19.89 4.65 21 5C21.75 5.25 22.4 5.55 23 6V20.6C23 20.85 22.75 21.1 22.5 21.1C22.4 21.1 22.35 21.1 22.25 21.05C20.85 20.3 19.15 20 17.5 20C15.8 20 13.35 20.65 12 21.5M11 7.5C9.64 6.9 7.84 6.5 6.5 6.5C5.3 6.5 4.1 6.65 3 7V18.5C4.1 18.15 5.3 18 6.5 18C7.84 18 9.64 18.4 11 19V7.5M13 19C14.36 18.4 16.16 18 17.5 18C18.7 18 19.9 18.15 21 18.5V7C19.9 6.65 18.7 6.5 17.5 6.5C16.16 6.5 14.36 6.9 13 7.5V19Z" /></svg>The Library<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>book-open-blank-variant-outline</title><path d="M12 21.5C10.65 20.65 8.2 20 6.5 20C4.85 20 3.15 20.3 1.75 21.05C1.65 21.1 1.6 21.1 1.5 21.1C1.25 21.1 1 20.85 1 20.6V6C1.6 5.55 2.25 5.25 3 5C4.11 4.65 5.33 4.5 6.5 4.5C8.45 4.5 10.55 4.9 12 6C13.45 4.9 15.55 4.5 17.5 4.5C18.67 4.5 19.89 4.65 21 5C21.75 5.25 22.4 5.55 23 6V20.6C23 20.85 22.75 21.1 22.5 21.1C22.4 21.1 22.35 21.1 22.25 21.05C20.85 20.3 19.15 20 17.5 20C15.8 20 13.35 20.65 12 21.5M11 7.5C9.64 6.9 7.84 6.5 6.5 6.5C5.3 6.5 4.1 6.65 3 7V18.5C4.1 18.15 5.3 18 6.5 18C7.84 18 9.64 18.4 11 19V7.5M13 19C14.36 18.4 16.16 18 17.5 18C18.7 18 19.9 18.15 21 18.5V7C19.9 6.65 18.7 6.5 17.5 6.5C16.16 6.5 14.36 6.9 13 7.5V19Z" /></svg></div>
+        <div class="new_book">
+            <dialog id="book-dialog">
+                <div class="dialog-son">
+                    <form>
+                        <h3>Add a new book:</h3>
+                         <div class="book_title_section">
+                             <label for="book_title">Book Title:</label>
+                             <input type="text" name="title" id="book_title" placeholder="Book Title" required>
+                         </div>
+                         <div class="book_author_section">
+                             <label for="book_author">Book Author:</label>
+                             <input type="text" name="author" id="book_author" placeholder="Book Author" required>
+                         </div>
+                         <div class="book_pages_section">
+                             <label for="book_pages">Book Pages:</label>
+                             <input type="number" name="pages" id="book_pages" min="1" required placeholder="pages">
+                         </div>
+                         <div class="read_yet_section">
+                            <label for="read_yet">I have read this book:</label>
+                            <select id="read_yet" required>
+                                <option value="default">Choose…</option>
+                                <option value="true">True</option>
+                                <option vlaue="false">False</option>
+                            </select>
+                         </div>
+                         <div class="dialog-buttons">
+                             <button value="cancel" formmethod="dialog" formnovalidate>Cancel</button>
+                             <button id="submit-book">Submit Book</button>
+                         </div>
+                    </form>
+                </div>
+            </dialog>
+            <button id="new-book-button">New Book</button>
+        </div>
+        <div id="container">
+        </div>
+    </div>
+    
+</body>
+</html>
