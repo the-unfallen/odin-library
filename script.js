@@ -1,4 +1,4 @@
-// alert('Happy New Year!');
+
 // Random data to initialize the library array.
 const start_data = [
     { title: 'Awo: The Autobiography of Chief Obafemi Awolowo', author: 'Obafemi Awolowo', pages: 315, read: true },
@@ -20,18 +20,18 @@ const start_data = [
 
 
 
-
-
-
 const myLibrary = [];
 
-function Book(title, author, pages, read = false) {
-    //the constructor...
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.info = function(){
+
+class Book {
+    constructor(title, author, pages, read = false){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    get info(){
         if (this.read) {
             return (`${this.title} by ${this.author}, ${this.pages} pages, read this already`);
         } else {
@@ -94,11 +94,7 @@ function updateHtml() {
             const buttonIndexArray = button_id.split("-");
             button_index = buttonIndexArray[1];
             button_index = parseInt(button_index);
-            console.log(`buttonid: ${button_id}, index: ${button_index}`);
-            // delete_button.parentElement.remove();
-            // const current_div = document.getElementById(`card_${button_index}`);
-            // current_div.remove();
-            // myLibrary.splice(button_index, 1);
+            console.log({button_id, button_index});
             const deletes_parent = delete_button.parentElement;
             const deletes_grandparent = deletes_parent.parentElement;
             deletes_grandparent.remove();
@@ -117,7 +113,7 @@ function updateHtml() {
             let button_index = buttonIndexArray[1];
             button_index = parseInt(button_index);
             let read_index = button_index;
-            console.log(`Read button index: ${read_index}`);
+            console.log({read_id, read_index});
             read_book = myLibrary[read_index];
             if (read_book.read === true) {
                 //Toggle to false
@@ -164,16 +160,17 @@ displayDialog.addEventListener('click', function(){
 
 submitButton.addEventListener('click', function(event){
     event.preventDefault();
-    console.log(bookTitle.value);
-    console.log(bookAuthor.value);
-    console.log(bookPages.value);
-    console.log(bookSelect.value);
+    let myBookTitle = bookTitle.value;
+    let myBookAuthor = bookAuthor.value;
+    let myBookPages = bookPages.value;
+    
     let readValue = false;
     if(bookSelect.value === "true") {
         readValue = true;
     } else if (bookSelect.value === "false") {
         readValue = false;
     }
+    console.log({myBookTitle, myBookAuthor, myBookPages, readValue});
     myDialog.close();
     addBookToLibrary(bookTitle.value, bookAuthor.value, bookPages.value, readValue);
     document.getElementById('container').innerHTML = '';
