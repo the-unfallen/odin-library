@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'merriweatherblack';
-    src: url('/webfontkit-Merriweather/merriweather-black-webfont.woff2') format('woff2'),
-         url('/webfontkit-Merriweather/merriweather-black-webfont.woff') format('woff');
+    src: url('./webfontkit-Merriweather/merriweather-black-webfont.woff2') format('woff2'),
+         url('./webfontkit-Merriweather/merriweather-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'merriweatherblack_italic';
-    src: url('/webfontkit-Merriweather/merriweather-blackitalic-webfont.woff2') format('woff2'),
-         url('/webfontkit-Merriweather/merriweather-blackitalic-webfont.woff') format('woff');
+    src: url('./webfontkit-Merriweather/merriweather-blackitalic-webfont.woff2') format('woff2'),
+         url('./webfontkit-Merriweather/merriweather-blackitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'merriweatherbold';
-    src: url('/webfontkit-Merriweather/merriweather-bold-webfont.woff2') format('woff2'),
-         url('/webfontkit-Merriweather/merriweather-bold-webfont.woff') format('woff');
+    src: url('./webfontkit-Merriweather/merriweather-bold-webfont.woff2') format('woff2'),
+         url('./webfontkit-Merriweather/merriweather-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -40,8 +40,8 @@
 
 @font-face {
     font-family: 'merriweatherbold_italic';
-    src: url('/webfontkit-Merriweather/merriweather-bolditalic-webfont.woff2') format('woff2'),
-         url('/webfontkit-Merriweather/merriweather-bolditalic-webfont.woff') format('woff');
+    src: url('./webfontkit-Merriweather/merriweather-bolditalic-webfont.woff2') format('woff2'),
+         url('./webfontkit-Merriweather/merriweather-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -52,8 +52,8 @@
 
 @font-face {
     font-family: 'merriweatheritalic';
-    src: url('/webfontkit-Merriweather/merriweather-italic-webfont.woff2') format('woff2'),
-         url('/webfontkit-Merriweather/merriweather-italic-webfont.woff') format('woff');
+    src: url('./webfontkit-Merriweather/merriweather-italic-webfont.woff2') format('woff2'),
+         url('./webfontkit-Merriweather/merriweather-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -64,8 +64,8 @@
 
 @font-face {
     font-family: 'merriweatherlight';
-    src: url('/webfontkit-Merriweather/merriweather-light-webfont.woff2') format('woff2'),
-         url('/webfontkit-Merriweather/merriweather-light-webfont.woff') format('woff');
+    src: url('./webfontkit-Merriweather/merriweather-light-webfont.woff2') format('woff2'),
+         url('./webfontkit-Merriweather/merriweather-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -76,8 +76,8 @@
 
 @font-face {
     font-family: 'merriweatherlight_italic';
-    src: url('/webfontkit-Merriweather/merriweather-lightitalic-webfont.woff2') format('woff2'),
-         url('/webfontkit-Merriweather/merriweather-lightitalic-webfont.woff') format('woff');
+    src: url('./webfontkit-Merriweather/merriweather-lightitalic-webfont.woff2') format('woff2'),
+         url('./webfontkit-Merriweather/merriweather-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -88,8 +88,8 @@
 
 @font-face {
     font-family: 'merriweatherregular';
-    src: url('/webfontkit-Merriweather/merriweather-regular-webfont.woff2') format('woff2'),
-         url('/webfontkit-Merriweather/merriweather-regular-webfont.woff') format('woff');
+    src: url('./webfontkit-Merriweather/merriweather-regular-webfont.woff2') format('woff2'),
+         url('./webfontkit-Merriweather/merriweather-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
